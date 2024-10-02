@@ -12,7 +12,9 @@ IP Prefix untuk IT06
 | IT06 | 192.236 |
 |----|----|
 
-# TOPOLOGI (masukin gambar)
+# TOPOLOGI 
+![Screenshot (289)](https://github.com/user-attachments/assets/9df6bf71-7e65-40dc-aa4e-315c62431453)
+
 
 # CONFIG NODE
 - Nusantara
