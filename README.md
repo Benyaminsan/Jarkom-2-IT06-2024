@@ -165,7 +165,7 @@ echo 'zone "sudarsana.it06.com" {
 
 mkdir /etc/bind/jarkom
 
-cp /etc/bind/db.local /etc/bind/jarkom/sudarsana.it06.it23.com
+cp /etc/bind/db.local /etc/bind/jarkom/sudarsana.it06.it06.com
 
 echo '
 ;
@@ -212,7 +212,7 @@ echo 'zone "pasopati.it06.com" {
 
 mkdir /etc/bind/jarkom
 
-cp /etc/bind/db.local /etc/bind/jarkom/pasopati.it06.it23.com
+cp /etc/bind/db.local /etc/bind/jarkom/pasopati.it06.it06.com
 
 echo '
 ;
@@ -260,7 +260,7 @@ echo 'zone "rujapala.it06.com" {
 
 mkdir /etc/bind/jarkom
 
-cp /etc/bind/db.local /etc/bind/jarkom/rujapala.it06.it23.com
+cp /etc/bind/db.local /etc/bind/jarkom/rujapala.it06.it06.com
 
 echo '
 ;
