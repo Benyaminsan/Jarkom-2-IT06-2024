@@ -127,6 +127,11 @@ iface eth0 inet static
 # NO 1
 Untuk mempersiapkan peperangan World War MMXXIV (Iya sebanyak itu), Sriwijaya membuat dua kotanya menjadi web server yaitu Tanjungkulai, dan Bedahulu, serta Sriwijaya sendiri akan menjadi DNS Master. Kemudian karena merasa terdesak, Majapahit memberikan bantuan dan menjadikan kerajaannya (Majapahit) menjadi DNS Slave. 
 
+- Dapatkan nameserver dulu lewat Nusantara
+```
+cat /etc/resolv.conf
+```
+Darisana didapatkan bahwa nameservernya adalah 192.168.122.1
 - Gunakan nano /root/.bashrc pada node selain Nusantara dan masukkan berikut di bagian paling bawah
 ```
 echo 'nameserver 192.168.122.1' > /etc/resolv.conf
