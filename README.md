@@ -289,3 +289,16 @@ chmod +x ./sriwijaya3
 ping rujapala.it06.com
 ```
 - Dokumentasi:
+# NO 5
+Pastikan domain-domain tersebut dapat diakses oleh seluruh komputer (client) yang berada di Nusantara.
+
+- Disini, kita akan mencoba ping ke server **sudarsana.it06.com , pasopati.it06.com , rujapala.it06.com** dalam **SANJAYA, JAYANEGARA, dan ANUSAPATI** (client). Gunakan command berikut untuk mencobanya
+
+```
+ping -c 2 sudarsana.it06.com
+ping -c 2 pasopati.it06.com
+ping -c 2 rujapala.it06.com
+```
+
+- Dokumentasi:
+
