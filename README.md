@@ -296,7 +296,11 @@ Pastikan domain-domain tersebut dapat diakses oleh seluruh komputer (client) yan
 
 ```
 ping -c 2 sudarsana.it06.com
+```
+```
 ping -c 2 pasopati.it06.com
+```
+```
 ping -c 2 rujapala.it06.com
 ```
 
