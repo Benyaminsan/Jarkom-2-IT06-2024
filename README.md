@@ -165,9 +165,7 @@ nameserver 192.236.1.3
 ```
 nano /root/.bashrc
 ```
-```
-nano /root/.bashrc
-```
+- Lalu masukkan script berikut
 ```
 #!/bin/bash
 
