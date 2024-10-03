@@ -330,4 +330,46 @@ Akhir-akhir ini seringkali terjadi serangan brainrot ke DNS Server Utama, sebaga
 
 # NO 8
 Kamu juga diperintahkan untuk membuat subdomain khusus melacak kekuatan tersembunyi di Ohio dengan subdomain cakra.sudarsana.xxxx.com yang mengarah ke Bedahulu.
+- Masukkan script dibawah ini kedalam Sriwijaya
+```
+#!/bin/bash
+apt update
+apt install bind9 -y
+
+echo 'zone "sudarsana.it06.com" {
+	type master;
+	file "/etc/bind/jarkom/sudarsana.it06.com";
+};' > /etc/bind/named.conf.local
+
+mkdir /etc/bind/jarkom
+
+cp /etc/bind/db.local /etc/bind/jarkom/sudarsana.it06.com
+
+echo '
+;
+; BIND data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     sudarsana.it06.com. root.sudarsana.it06.com. (
+                        2024100318      ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      sudarsana.it06.com.
+@         IN      A       192.236.3.2     ; IP Solok
+www     IN      CNAME   sudarsana.it06.com.
+cakra    IN      A       192.236.1.5     ; IP Bedahulu
+www     IN      CNAME   cakra.sudarsana.it06.com.' > /etc/bind/jarkom/sudarsana.it06.com
+```
+- Lalu coba PING menggunakan client Anusapati
+```
+ping cakra.sudarsana.it06.com
+```
+```
+ping www.cakra.sudarsana.it06.com
+```
+- Dokumentasi:
+![image](https://github.com/user-attachments/assets/128a56b4-ce30-40f2-ad76-95661a1144ca)
 
