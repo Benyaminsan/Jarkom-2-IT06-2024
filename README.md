@@ -317,7 +317,7 @@ ping -c 2 rujapala.it06.com
 
   ![Screenshot (291)](https://github.com/user-attachments/assets/4be15933-746f-4a05-a624-f654503ffad6)
 
- **ANUSAPATI**
+  **ANUSAPATI**
 
   ![Screenshot (292)](https://github.com/user-attachments/assets/f87ec815-f803-40db-871a-06c35b9e98a9)
 
