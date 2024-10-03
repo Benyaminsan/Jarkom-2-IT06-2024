@@ -1,4 +1,4 @@
-![Screenshot (292)](https://github.com/user-attachments/assets/24694eb8-ae9e-481a-bdf9-a12b62901026)# Jarkom-2-IT06-2024
+# Jarkom-2-IT06-2024
 Laporan Resmi Jarkom Modul 2
 Buat Praktikan Jarkom IT06 yang masih pemula
 
