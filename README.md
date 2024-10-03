@@ -1,4 +1,4 @@
-# Jarkom-2-IT06-2024
+![Screenshot (292)](https://github.com/user-attachments/assets/24694eb8-ae9e-481a-bdf9-a12b62901026)# Jarkom-2-IT06-2024
 Laporan Resmi Jarkom Modul 2
 Buat Praktikan Jarkom IT06 yang masih pemula
 
@@ -147,6 +147,9 @@ iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.236.0.0/16
 ```
 - Reload seluruh node, lalu lakukan tes PING menggunakan setiap node untuk memastikan jaringannya aman
 Dokumentasi:
+![Screenshot (280)](https://github.com/user-attachments/assets/e0667c0b-18d4-4c7d-adb1-52b7cc5cb4e6)
+
+![Screenshot (281)](https://github.com/user-attachments/assets/106c36eb-0268-4180-a076-cdc0bac49f96)
 
 # NO 2
 Karena para pasukan membutuhkan koordinasi untuk melancarkan serangannya, maka buatlah sebuah domain yang mengarah ke **Solok** dengan alamat **sudarsana.xxxx.com** dengan alias **www.sudarsana.xxxx.com**, dimana **xxxx merupakan kode kelompok**. Contoh: sudarsana.it01.com.
@@ -194,6 +197,8 @@ chmod +x ./sriwijaya2
 ping sudarsana.it06.com
 ```
 - Dokumentasi:
+![Screenshot (283)](https://github.com/user-attachments/assets/9662dcb1-65c2-4013-8110-b5d428d14b85)
+
 
 # NO 3
 Para pasukan juga perlu mengetahui mana titik yang akan diserang, sehingga dibutuhkan domain lain yaitu **pasopati.xxxx.com** dengan **alias www.pasopati.xxxx.com** yang mengarah ke **Kotalingga**.
@@ -241,6 +246,7 @@ chmod +x ./sriwijaya3
 ping pasopati.it06.com
 ```
 - Dokumentasi:
+![Screenshot (286)](https://github.com/user-attachments/assets/4e041d90-97d1-47f6-8b7e-d0d41d3e471b)
 
 # NO 4
 Markas pusat meminta dibuatnya domain khusus untuk menaruh informasi persenjataan dan suplai yang tersebar. Informasi dan suplai meme terbaru tersebut mengarah ke **Tanjungkulai** dan domain yang ingin digunakan adalah **rujapala.xxxx.com** dengan alias **www.rujapala.xxxx.com**.
@@ -289,6 +295,8 @@ chmod +x ./sriwijaya3
 ping rujapala.it06.com
 ```
 - Dokumentasi:
+![Screenshot (287)](https://github.com/user-attachments/assets/eff44ad6-be70-4165-b768-cc7cb2b95419)
+
 # NO 5
 Pastikan domain-domain tersebut dapat diakses oleh seluruh komputer (client) yang berada di Nusantara.
 
@@ -305,4 +313,25 @@ ping -c 2 rujapala.it06.com
 ```
 
 - Dokumentasi:
+  **SANJAYA**
+
+  ![Screenshot (290)](https://github.com/user-attachments/assets/71cea925-9d78-45a0-83b7-144abb22a61a)
+
+  **JAYANEGARA**
+
+  ![Screenshot (291)](https://github.com/user-attachments/assets/4be15933-746f-4a05-a624-f654503ffad6)
+
+ **ANUSAPATI**
+
+  ![Screenshot (292)](https://github.com/user-attachments/assets/f87ec815-f803-40db-871a-06c35b9e98a9)
+
+
+# NO 6
+Beberapa daerah memiliki keterbatasan yang menyebabkan hanya dapat mengakses domain secara langsung melalui alamat IP domain tersebut. Karena daerah tersebut tidak diketahui secara spesifik, pastikan semua komputer (client) dapat mengakses domain pasopati.xxxx.com melalui alamat IP Kotalingga (Notes: menggunakan pointer record).
+
+# NO 7
+Akhir-akhir ini seringkali terjadi serangan brainrot ke DNS Server Utama, sebagai tindakan antisipasi kamu diperintahkan untuk membuat DNS Slave di Tanjungkulai untuk semua domain yang sudah dibuat sebelumnya.
+
+# NO 8
+Kamu juga diperintahkan untuk membuat subdomain khusus melacak kekuatan tersembunyi di Ohio dengan subdomain cakra.sudarsana.xxxx.com yang mengarah ke Bedahulu.
 
