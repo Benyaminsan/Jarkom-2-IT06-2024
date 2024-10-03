@@ -196,10 +196,6 @@ www     IN      CNAME   sudarsana.it06.com.' > /etc/bind/jarkom/sudarsana.it06.c
 
 service bind9 restart
 ```
-- Save, lalu jalankan script dengan
-```
-chmod +x ./sriwijaya2
-```
 - Coba PING ke web tersebut lewat Sriwijaya dengan command
 ```
 ping sudarsana.it06.com
@@ -245,10 +241,6 @@ www     IN      CNAME   pasopati.it06.com.' > /etc/bind/jarkom/pasopati.it06.com
 
 service bind9 restart
 ```
-- Save, lalu jalankan script dengan
-```
-chmod +x ./sriwijaya3
-```
 - Coba PING ke web tersebut lewat Sriwijaya dengan command
 ```
 ping pasopati.it06.com
@@ -293,10 +285,6 @@ $TTL    604800
 www     IN      CNAME   rujapala.it06.com.' > /etc/bind/jarkom/rujapala.it06.com
 
 service bind9 restart
-```
-- Save, lalu jalankan script dengan
-```
-chmod +x ./sriwijaya3
 ```
 - Coba PING ke web tersebut lewat Sriwijaya dengan command
 ```
