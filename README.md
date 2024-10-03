@@ -373,3 +373,98 @@ ping www.cakra.sudarsana.it06.com
 - Dokumentasi:
 ![image](https://github.com/user-attachments/assets/128a56b4-ce30-40f2-ad76-95661a1144ca)
 
+# NO 9
+Karena terjadi serangan DDOS oleh shikanoko nokonoko koshitantan (NUN), sehingga sistem komunikasinya terhalang. Untuk melindungi warga, kita diperlukan untuk membuat sistem peringatan dari siren man oleh Frekuensi Freak dan memasukkannya ke subdomain panah.pasopati.xxxx.com dalam folder panah dan pastikan dapat diakses secara mudah dengan menambahkan alias www.panah.pasopati.xxxx.com dan mendelegasikan subdomain tersebut ke Tanjungkulai dengan alamat IP menuju radar di Kotalingga.
+- Masukkan script berikut kedalam Sriwijaya:
+```
+#!/bin/bash
+
+
+echo '
+;
+; BIND data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     pasopati.it06.com. root.pasopati.it06.com. (
+                        2024100319                   ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@         IN      NS      pasopati.it06.com.
+@         IN      A       192.236.2.4    ; IP Kotalingga
+www     IN      CNAME   pasopati.it06.com.
+panah   IN      A       192.236.2.2     ; Delegasikan ke Majapahit
+ns1       IN      A       192.236.2.2    ; Delegasikan ke Majapahit
+panah   IN      NS      ns1' > /etc/bind/jarkom/pasopati.it06.com
+
+echo '
+options {
+        directory "/var/cache/bind";
+
+        //dnssec-validation auto;
+        allow-query{any;};
+
+        auth-nxdomain no;    # conform to RFC1035
+        listen-on-v6 { any; };
+};' > /etc/bind/named.conf.options
+
+service bind9 restart
+```
+- Masukkan script berikut ke Majapahit:
+```
+#!/bin/bash
+
+echo '
+options {
+        directory "/var/cache/bind";
+
+        //dnssec-validation auto;
+        allow-query{any;};
+
+        auth-nxdomain no;    # conform to RFC1035
+        listen-on-v6 { any; };
+};' > /etc/bind/named.conf.options
+
+echo 'zone "panah.pasopati.it06.com" {
+	type master;
+	file "/etc/bind/panah/panah.pasopati.it06.com";
+};' >> /etc/bind/named.conf.local
+
+mkdir /etc/bind/panah
+
+cp /etc/bind/db.local /etc/bind/panah/panah.pasopati.it06.com
+
+echo '
+;
+; BIND data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     panah.pasopati.it06.com. root.panah.pasopati.it06.com. (
+                        2024100119                    ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      panah.pasopati.it06.com.
+@       IN      A       192.236.2.2     ; IP Majapahit
+www.panah     IN      CNAME   panah.pasopati.it06.com.' > /etc/bind/panah/panah.pasopati.it06.com
+
+service bind9 restart
+```
+- Gunakan command dibawah untuk nge-test PING
+```
+ping panah.pasopati.it06.com
+```
+```
+ping www.panah.pasopati.it06.com
+```
+- Dokumentasi:
+**SANJAYA**
+  ![Screenshot (300)](https://github.com/user-attachments/assets/3a050153-4e30-4586-b188-3d7cb961cb96)
+**ANUSAPATI**
+  ![Screenshot (301)](https://github.com/user-attachments/assets/45a420e2-5c79-4c68-b33f-8f88c346d887)
+**JAYANEGARA**
+  ![Screenshot (302)](https://github.com/user-attachments/assets/696a622d-e945-492d-9ae9-270cda16b05a)
