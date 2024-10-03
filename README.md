@@ -236,7 +236,7 @@ $TTL    604800
                          604800 )       ; Negative Cache TTL
 ;
 @       IN      NS      pasopati.it06.com.
-@       IN      A       10.81.3.2     ; IP Kotalingga
+@       IN      A       192.236.2.4     ; IP Kotalingga
 www     IN      CNAME   pasopati.it06.com.' > /etc/bind/jarkom/pasopati.it06.com
 
 service bind9 restart
