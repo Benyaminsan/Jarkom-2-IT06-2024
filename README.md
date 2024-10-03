@@ -153,11 +153,21 @@ Dokumentasi:
 
 # NO 2
 Karena para pasukan membutuhkan koordinasi untuk melancarkan serangannya, maka buatlah sebuah domain yang mengarah ke **Solok** dengan alamat **sudarsana.xxxx.com** dengan alias **www.sudarsana.xxxx.com**, dimana **xxxx merupakan kode kelompok**. Contoh: sudarsana.it01.com.
-- Buat nano file baru, disini saya namakan **sriwijaya2**
+- Gunakan command
 ```
-nano sriwijaya2
+nano /etc/resolv.conf
 ```
-Lalu, masukkan script berikut kedalamnya
+Dan tambahkan ip milik sriwijaya
+```
+nameserver 192.236.1.3
+```
+- Jalankan script berikut untuk menambahkan script kedalam /root/.bashrc
+```
+nano /root/.bashrc
+```
+```
+nano /root/.bashrc
+```
 ```
 #!/bin/bash
 
@@ -202,9 +212,9 @@ ping sudarsana.it06.com
 
 # NO 3
 Para pasukan juga perlu mengetahui mana titik yang akan diserang, sehingga dibutuhkan domain lain yaitu **pasopati.xxxx.com** dengan **alias www.pasopati.xxxx.com** yang mengarah ke **Kotalingga**.
-- Buat nano file baru, disini saya namakan **sriwijaya3**
+- Jalankan script berikut untuk menambahkan script kedalam /root/.bashrc
 ```
-nano sriwijaya3
+nano /root/.bashrc
 ```
 Lalu, masukkan script berikut kedalamnya
 ```
@@ -251,9 +261,9 @@ ping pasopati.it06.com
 # NO 4
 Markas pusat meminta dibuatnya domain khusus untuk menaruh informasi persenjataan dan suplai yang tersebar. Informasi dan suplai meme terbaru tersebut mengarah ke **Tanjungkulai** dan domain yang ingin digunakan adalah **rujapala.xxxx.com** dengan alias **www.rujapala.xxxx.com**.
 Karena para pasukan membutuhkan koordinasi untuk melancarkan serangannya, maka buatlah sebuah domain yang mengarah ke **Solok** dengan alamat **sudarsana.xxxx.com** dengan alias **www.sudarsana.xxxx.com**, dimana **xxxx merupakan kode kelompok**. Contoh: sudarsana.it01.com.
-- Buat nano file baru, disini saya namakan **sriwijaya4**
+- Jalankan script berikut untuk menambahkan script kedalam /root/.bashrc
 ```
-nano sriwijaya4
+nano /root/.bashrc
 ```
 Lalu, masukkan script berikut kedalamnya
 ```
